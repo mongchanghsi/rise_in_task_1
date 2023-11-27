@@ -109,4 +109,8 @@ contract ProposalContract {
     function getProposal(uint256 number) external view returns(Proposal memory) {
         return proposal_history[number];
     }
+
+    function getOwner() public view returns (address){
+        return owner;
+    }
 }
